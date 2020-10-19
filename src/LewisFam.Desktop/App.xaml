@@ -1,0 +1,115 @@
+﻿<prism:PrismApplication
+    x:Class="LewisFam.Desktop.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:LewisFam.Desktop.Core;assembly=LewisFam.Desktop.Core"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:LewisFam.Desktop"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Application.Resources>
+        <!--<ResourceDictionary Source="styles\dev_Styles.xaml" />-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/_FontSizes.xaml" />
+                <ResourceDictionary Source="/Styles/_Thickness.xaml" />
+                <ResourceDictionary Source="/Styles/TextBlock.xaml" />
+                <ResourceDictionary Source="/Styles/UserControl.xaml" />
+
+                <!--<ResourceDictionary Source="/Styles/MetroWindow.xaml" />-->
+                <!--
+                    MahApps.Metro resource dictionaries.
+                    Learn more about using MahApps.Metro at https://mahapps.com/
+                -->
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />-->
+                <!--  Accent and AppTheme setting  -->
+
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Dark.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />-->
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />-->
+
+                <ResourceDictionary Source="/Styles/Button.xaml" />
+
+                <ResourceDictionary Source="/MyResources.xaml" />
+                <!--<ResourceDictionary Source="/LewisFam.Desktop.Modules.Stocks;component/_MyResources.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="tileitemstyle" TargetType="{x:Type syncfusion:TileViewItem}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="syncfusion:TileViewItem">
+                            <Border BorderBrush="Gray" BorderThickness="0">
+                                <Grid
+                                    x:Name="itemGrid"
+                                    Margin="5"
+                                    Background="White">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="{TemplateBinding BorderRow}" Grid.Column="{TemplateBinding BorderColumn}">
+                                        <Grid>
+                                            <DockPanel LastChildFill="True">
+                                                <Grid x:Name="PART_Content">
+                                                    <ContentPresenter
+                                                        x:Name="content"
+                                                        Margin="{TemplateBinding Margin}"
+                                                        Content="{TemplateBinding Content}"
+                                                        ContentTemplate="{TemplateBinding ContentTemplate}" />
+                                                </Grid>
+                                            </DockPanel>
+                                            <Button x:Name="stateButton" Opacity="0">
+                                                <i:Interaction.Behaviors>
+                                                    <core:StateChangeBehavior Target="{Binding RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TileViewControl}, Mode=FindAncestor}}" />
+                                                </i:Interaction.Behaviors>
+                                            </Button>
+                                        </Grid>
+                                    </Border>
+                                    <Grid Grid.Column="1">
+                                        <ToggleButton
+                                            x:Name="MinMaxButton"
+                                            IsThreeState="True"
+                                            Opacity="0"
+                                            Visibility="Collapsed" />
+                                    </Grid>
+
+                                    <Border
+                                        x:Name="SplitBorder"
+                                        Grid.Row="{TemplateBinding SplitRow}"
+                                        Grid.Column="{TemplateBinding SplitColumn}"
+                                        Background="{Binding SplitterColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:TileViewControl}}}"
+                                        BorderBrush="{Binding SplitterColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:TileViewControl}}}"
+                                        CornerRadius="{TemplateBinding CornerRadius}" />
+                                </Grid>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <MultiTrigger>
+                                    <MultiTrigger.Conditions>
+                                        <Condition Property="IsMouseOver" Value="True" />
+                                        <Condition Property="TileViewItemState" Value="Normal" />
+                                    </MultiTrigger.Conditions>
+                                    <Setter Property="Opacity" Value="0.9" />
+                                </MultiTrigger>
+                                <Trigger Property="TileViewItemState" Value="Maximized">
+                                    <Setter TargetName="stateButton" Property="Visibility" Value="Collapsed" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="TileViewItemState" Value="Normal">
+                        <Setter Property="Cursor" Value="Hand" />
+                    </Trigger>
+
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</prism:PrismApplication>

@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LewisFam.Common</name>
+    </assembly>
+    <members>
+        <member name="T:LewisFam.Common.Config.AppConfig">
+            <summary>
+            The app config.
+            </summary>
+            <remarks>Internal use only.</remarks>
+        </member>
+        <member name="F:LewisFam.Common.Constants.FileExtension.Jsons">
+            <summary>.jsons is an internal use file extension which simply means a collection of JSON records.</summary>
+        </member>
+        <member name="M:LewisFam.Common.Util.JsonUtil.SerializeObject(System.Object,System.Boolean)">
+            <summary>Serializes the object.</summary>
+            <param name="obj">   The obj.</param>
+            <param name="format">If true, format.</param>
+            <returns>A string.</returns>
+        </member>
+        <member name="M:LewisFam.Common.Util.JsonUtil.ToJson(System.Object,System.Boolean)">
+            <summary>
+            Tos the json.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="format">If true, format.</param>
+            <returns>A string.</returns>
+        </member>
+        <member name="T:LewisFam.Common.Util.ObjectGeneratorUtil">
+            <summary>
+            This class will create an object of a given type and populate it with sample data.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Common.Util.ObjectGeneratorUtil.GenerateObject(System.Type)">
+            <summary>
+            Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types:
+            Simple types: <see cref="T:System.Int32"/>, <see cref="T:System.String"/>, <see cref="T:System.Enum"/>, <see cref="T:System.DateTime"/>, <see cref="T:System.Uri"/>, etc.
+            Complex types: POCO types.
+            Nullables: <see cref="T:System.Nullable`1"/>.
+            Arrays: arrays of simple types or complex types.
+            Key value pairs: <see cref="T:System.Collections.Generic.KeyValuePair`2"/>
+            Tuples: <see cref="T:System.Tuple`1"/>, <see cref="T:System.Tuple`2"/>, etc
+            Dictionaries: <see cref="T:System.Collections.Generic.IDictionary`2"/> or anything deriving from <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            Collections: <see cref="T:System.Collections.Generic.IList`1"/>, <see cref="T:System.Collections.Generic.IEnumerable`1"/>, <see cref="T:System.Collections.Generic.ICollection`1"/>, <see cref="T:System.Collections.IList"/>, <see cref="T:System.Collections.IEnumerable"/>, <see cref="T:System.Collections.ICollection"/> or anything deriving from <see cref="T:System.Collections.Generic.ICollection`1"/> or <see cref="T:System.Collections.IList"/>.
+            Queryables: <see cref="T:System.Linq.IQueryable"/>, <see cref="T:System.Linq.IQueryable`1"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>An object of the given type.</returns>
+        </member>
+        <member name="M:LewisFam.Common.Extensions.EncryptionExtension.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts the.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="key">The key.</param>
+            <returns>A string.</returns>
+            <exception cref="T:System.RankException">Ignore.</exception>
+            <exception cref="T:System.ArrayTypeMismatchException">Ignore.</exception>
+            <exception cref="T:System.InvalidCastException">Ignore.</exception>
+            <exception cref="T:System.ObjectDisposedException">Ignore.</exception>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="M:LewisFam.Common.Extensions.EncryptionExtension.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts
+            </summary>
+            <param name="encryptedText">The encrypted text.</param>
+            <param name="key">The key.</param>
+            <returns>A string.</returns>
+            <exception cref="T:System.ObjectDisposedException">Ignore.</exception>
+        </member>
+        <member name="M:LewisFam.Common.Extensions.IEnumerableExtension.GetDynamicPropertyName(System.Object,System.String)">
+            <summary>
+            Gets the dynamic property name.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="propName">The prop name.</param>
+            <returns>An object.</returns>
+            <exception cref="T:System.Reflection.AmbiguousMatchException">Ignore.</exception>
+            <exception cref="T:System.Reflection.TargetException">Ignore.</exception>
+            <exception cref="T:System.Reflection.TargetParameterCountException">Ignore.</exception>
+            <exception cref="T:System.MethodAccessException">Ignore.</exception>
+            <exception cref="T:System.Reflection.TargetInvocationException">Ignore.</exception>
+        </member>
+        <member name="M:LewisFam.Common.Extensions.JsonExtension.ToJson(System.Object,System.Boolean)">
+            <summary>To JSON</summary>
+            <param name="value"> The value.</param>
+            <param name="format">If true, format.</param>
+            <returns>A json string.</returns>
+        </member>
+        <member name="M:LewisFam.Common.Extensions.JsonExtension.ToJsonAsync(System.Object,System.Boolean)">
+            <summary>Tos the json async.</summary>
+            <param name="obj">   The obj.</param>
+            <param name="format">If true, format.</param>
+            <returns>A Task.</returns>
+        </member>
+        <member name="T:LewisFam.Common.Operations.IOperationResponse">
+            <summary>
+            The operation response.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Common.Operations.IOperationResponse.Id">
+            <summary>
+            Gets the id.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Common.Operations.IOperationResponse.IsValid">
+            <summary>
+            Gets a value indicating whether is valid.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Common.Operations.IOperationResponse.MetaData">
+            <summary>
+            Gets or sets the meta data.
+            </summary>
+        </member>
+        <member name="T:LewisFam.Common.Operations.IOperationResponse`1">
+            <summary>
+            The operation response.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Common.Operations.IOperationResponse`1.Id">
+            <summary>
+            Gets the id.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Common.Operations.IOperationResponse`1.IsValid">
+            <summary>
+            Gets a value indicating whether is valid.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Common.Operations.IOperationResponse`1.MetaData">
+            <summary>
+            Gets or sets the meta data.
+            </summary>
+        </member>
+        <member name="T:LewisFam.Common.Operations.Response">
+            <summary>
+            Internal use only. 
+            </summary>
+            <seealso cref="T:LewisFam.Common.Operations.IOperationResponse" />
+        </member>
+        <member name="M:LewisFam.Common.Operations.Response.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Common.Operations.Response"/> class.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Common.Operations.Response.#ctor(System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Common.Operations.Response"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="P:LewisFam.Common.Operations.Response.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:LewisFam.Common.Operations.Response.IsValid">
+            <summary>
+            Returns true if MetaData is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:LewisFam.Common.Operations.Response.MetaData">
+            <summary>
+            Meta Data
+            </summary>
+        </member>
+        <member name="M:LewisFam.Common.Operations.Response.SetId(System.Guid)">
+            <summary>
+            Sets the identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="T:LewisFam.Common.Operations.Response`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="!:IResponseOperation" />
+        </member>
+        <member name="M:LewisFam.Common.Operations.Response`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Common.Operations.Response`1"/> class.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Common.Operations.Response`1.#ctor(System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Common.Operations.Response`1"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="P:LewisFam.Common.Operations.Response`1.IsValid">
+            <summary>
+            Returns true if MetaData is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:LewisFam.Common.Operations.Response`1.MetaData">
+            <summary>
+            Meta Data
+            </summary>
+        </member>
+    </members>
+</doc>

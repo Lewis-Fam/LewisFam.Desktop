@@ -1,0 +1,32 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+
+
+
+    <Style x:Key="redCellStyle" TargetType="syncfusion:GridCell">
+
+        <Setter Property="Background" Value="Red" />
+    </Style>
+    <Style x:Key="orangeCellStyle" TargetType="syncfusion:GridCell">
+
+        <Setter Property="Background" Value="Orange" />
+    </Style>
+
+    <Style x:Key="yellowCellStyle" TargetType="syncfusion:GridCell">
+
+        <Setter Property="Background" Value="Yellow" />
+    </Style>
+
+    <Style x:Key="greenCellStyle" TargetType="syncfusion:GridCell">
+        <Setter Property="Background" Value="Green" />
+    </Style>
+
+    <Style x:Key="blueCellStyle" TargetType="syncfusion:GridCell">
+        <Setter Property="Foreground" Value="DarkBlue" />
+    </Style>
+
+
+
+</ResourceDictionary>

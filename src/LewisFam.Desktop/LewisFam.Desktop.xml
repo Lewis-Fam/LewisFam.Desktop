@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LewisFam.Desktop</name>
+    </assembly>
+    <members>
+        <member name="T:LewisFam.Desktop.App">
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.App.CreateModuleCatalog">
+            <inheritdoc/>        
+        </member>
+        <member name="M:LewisFam.Desktop.App.CreateShell">
+            <inheritdoc/>        
+        </member>
+        <member name="M:LewisFam.Desktop.App.OnExit(System.Windows.ExitEventArgs)">
+            <summary>
+            On Exit.
+            </summary>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.App.RegisterTypes(Prism.Ioc.IContainerRegistry)">
+            <inheritdoc/>        
+        </member>
+        <member name="M:LewisFam.Desktop.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:LewisFam.Desktop.Properties.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.AppDisplayName">
+            <summary>
+              Looks up a localized string similar to App1.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.DialogAuthenticationTitle">
+            <summary>
+              Looks up a localized string similar to Application Authentication.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.DialogNoNetworkAvailableContent">
+            <summary>
+              Looks up a localized string similar to There is no internet connection, please connect to the internet and try again..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.DialogStatusUnknownErrorContent">
+            <summary>
+              Looks up a localized string similar to Something went wrong during the login, please try again..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.MainPageTitle">
+            <summary>
+              Looks up a localized string similar to Main.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.MasterDetailPageTitle">
+            <summary>
+              Looks up a localized string similar to MasterDetail.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageAboutText">
+            <summary>
+              Looks up a localized string similar to Settings page placeholder text.  Your app description goes here..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageAboutTitle">
+            <summary>
+              Looks up a localized string similar to About this application.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageChooseThemeText">
+            <summary>
+              Looks up a localized string similar to Choose Theme.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageLogInButtonText">
+            <summary>
+              Looks up a localized string similar to Log In.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageLogOutButtonText">
+            <summary>
+              Looks up a localized string similar to Log out.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageNoUserLoggedInText">
+            <summary>
+              Looks up a localized string similar to There is no user logged in, please click &quot;Log In&quot; to log in..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPagePersonalizationTitle">
+            <summary>
+              Looks up a localized string similar to Personalization.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPagePrivacyStatementText">
+            <summary>
+              Looks up a localized string similar to Privacy Statement.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageRadioButtonDarkTheme">
+            <summary>
+              Looks up a localized string similar to Dark.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageRadioButtonLightTheme">
+            <summary>
+              Looks up a localized string similar to Light.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageTitle">
+            <summary>
+              Looks up a localized string similar to Settings.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.SettingsPageUserTitle">
+            <summary>
+              Looks up a localized string similar to User.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.ShellPageRibbonBackstageTabSettingsHeader">
+            <summary>
+              Looks up a localized string similar to Settings.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.ShellPageRibbonHomeGroupCommon1Header">
+            <summary>
+              Looks up a localized string similar to Common Group 1.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.ShellPageRibbonHomeGroupCommon2Header">
+            <summary>
+              Looks up a localized string similar to Common Group 2.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.ShellPageRibbonTabHomeHeader">
+            <summary>
+              Looks up a localized string similar to Home.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.WebViewPageBackButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Back (Alt + Left).
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.WebViewPageFaildedMessage">
+            <summary>
+              Looks up a localized string similar to Page failed to load. Check connection and retry..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.WebViewPageForwardButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Forward (Alt + Right).
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.WebViewPageLoadingText">
+            <summary>
+              Looks up a localized string similar to Loading....
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.WebViewPageOpenInBrowserButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Open in browser (Ctrl + T).
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Properties.Resource.WebViewPageRefreshButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Refresh (F5).
+            </summary>
+        </member>
+        <member name="T:LewisFam.Desktop.Views.ShellWindow">
+            <summary>
+            Interaction logic for ShellWindow.xaml
+            </summary>
+            <summary>
+            ShellWindow
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Views.ShellWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

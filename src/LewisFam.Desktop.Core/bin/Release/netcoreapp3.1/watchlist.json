@@ -1,0 +1,126 @@
+{
+  "id": "c72f1952-9df0-4fee-adb8-248e8533839c",
+  "name": "Sample Watchlist",
+  "webullStocks": [
+    {
+      "symbol": "NKLA",
+      "tickerId": 950102389
+    },
+    {
+      "symbol": "NIO",
+      "tickerId": 950076017
+    },
+    {
+      "symbol": "MRNA",
+      "tickerId": 950102542
+    },
+    {
+      "symbol": "DKNG",
+      "tickerId": 950153166
+    },
+    {
+      "symbol": "SIRI",
+      "tickerId": 913323516
+    },
+    {
+      "symbol": "NFLX",
+      "tickerId": 913257027
+    },
+    {
+      "symbol": "CAT",
+      "tickerId": 913255062
+    },
+    {
+      "symbol": "DPZ",
+      "tickerId": 913255206
+    },
+    {
+      "symbol": "V",
+      "tickerId": 913324504
+    },
+    {
+      "symbol": "LK",
+      "tickerId": 950122583
+    },
+    {
+      "symbol": "MSFT",
+      "tickerId": 913323997
+    },
+    {
+      "symbol": "NVDA",
+      "tickerId": 913257561
+    },
+    {
+      "symbol": "AMD",
+      "tickerId": 913254235
+    },
+    {
+      "symbol": "DAL",
+      "tickerId": 913255171
+    },
+    {
+      "symbol": "AAL",
+      "tickerId": 913255803
+    },
+    {
+      "symbol": "CMCSA",
+      "tickerId": 913256672
+    },
+    {
+      "symbol": "GE",
+      "tickerId": 913255327
+    },
+    {
+      "symbol": "ROKU",
+      "tickerId": 925376726
+    },
+    {
+      "symbol": "CMG",
+      "tickerId": 913255105
+    },
+    {
+      "symbol": "GD",
+      "tickerId": 913255326
+    },
+    {
+      "symbol": "LMT",
+      "tickerId": 913255490
+    },
+    {
+      "symbol": "DIS",
+      "tickerId": 913255192
+    },
+    {
+      "symbol": "MAXR",
+      "tickerId": 950052426
+    },
+    {
+      "symbol": "BA",
+      "tickerId": 913254998
+    },
+    {
+      "symbol": "ZM",
+      "tickerId": 950118595
+    },
+    {
+      "symbol": "ABEV",
+      "tickerId": 913322748
+    },
+    {
+      "symbol": "UPWK",
+      "tickerId": 950082315
+    },
+    {
+      "symbol": "SPHB",
+      "tickerId": 913247368
+    },
+    {
+      "symbol": "NLSN",
+      "tickerId": 913254334
+    },
+    {
+      "symbol": "SPCE",
+      "tickerId": 950052430
+    }
+  ]
+}

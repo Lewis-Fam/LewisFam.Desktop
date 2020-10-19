@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LewisFam.Desktop.Core</name>
+    </assembly>
+    <members>
+        <member name="T:LewisFam.Desktop.Core.Config.AppConfig">
+            <summary>The app config.</summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Config.AppConfig.Load(System.String)">
+            <summary>
+            Loads the.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>An AppConfig.</returns>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Config.AppConfig.Save(LewisFam.Desktop.Core.Config.AppConfig,System.Boolean,System.String)">
+            <summary>Save</summary>
+            <param name="config"></param>
+            <param name="path">  </param>
+            <param name="format"></param>
+            <exception cref="T:System.IO.PathTooLongException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.Security.SecurityException"></exception>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Config.AppConfig.defaultFileName">
+            <summary>The default file name.</summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Constants.Layout.RegionNames.ContentRegion">
+            <summary>Region 'ContentRegion'</summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Constants.Layout.RegionNames.ContentRegion_Stocks">
+            <summary>Region 'ContentRegion_Stocks'</summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Constants.Layout.RegionNames.Footer_Region">
+            <summary>Region 'Footer_Region'</summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Constants.Layout.RegionNames.RightContentRegion">
+            <summary>Region 'RightContentRegion'</summary>
+        </member>
+        <member name="T:LewisFam.Desktop.Core.Mvvm.IModule">
+            <summary>
+            Internal use only. <seealso cref="T:Prism.Modularity.IModule"/>
+            </summary>    
+        </member>
+        <member name="T:LewisFam.Desktop.Core.Mvvm.Module">
+            <remarks>Internal use only.</remarks>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Mvvm.Module.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Desktop.Core.Mvvm.Module"/> class.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Mvvm.Module.#ctor(Prism.Regions.IRegionManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Desktop.Core.Mvvm.Module"/> class.
+            </summary>
+            <param name="regionManager">The region manager.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Mvvm.Module.OnInitialized(Prism.Ioc.IContainerProvider)">
+            <summary>On initialized.</summary>
+            <param name="containerProvider">The container provider.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Mvvm.Module.RegisterTypes(Prism.Ioc.IContainerRegistry)">
+            <summary>Registers the types.</summary>
+            <param name="containerRegistry">The container registry.</param>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Mvvm.Module.ContainerProvider">
+            <summary>Gets or sets the container provider.</summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Mvvm.Module.ModuleManager">
+            <summary>Gets the module manager.</summary>
+        </member>
+        <member name="T:LewisFam.Desktop.Core.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.AddButtonText">
+            <summary>
+              Looks up a localized string similar to Add.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.App_Title">
+            <summary>
+              Looks up a localized string similar to The Lewis Fam App.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.AppDisplayName">
+            <summary>
+              Looks up a localized string similar to LewisFam.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.CancelButtonText">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.DialogAuthenticationTitle">
+            <summary>
+              Looks up a localized string similar to Application Authentication.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.DialogNoNetworkAvailableContent">
+            <summary>
+              Looks up a localized string similar to There is no internet connection, please connect to the internet and try again..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.DialogStatusUnknownErrorContent">
+            <summary>
+              Looks up a localized string similar to Something went wrong during the login, please try again..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.Header_About">
+            <summary>
+              Looks up a localized string similar to About.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.Header_Quotes">
+            <summary>
+              Looks up a localized string similar to Quotes.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.MainPageTitle">
+            <summary>
+              Looks up a localized string similar to Main.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.MasterDetailPageTitle">
+            <summary>
+              Looks up a localized string similar to MasterDetail.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SaveButtonText">
+            <summary>
+              Looks up a localized string similar to Save.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageAboutText">
+            <summary>
+              Looks up a localized string similar to Settings page placeholder text.  Your app description goes here..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageAboutTitle">
+            <summary>
+              Looks up a localized string similar to About this application.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageChooseThemeText">
+            <summary>
+              Looks up a localized string similar to Choose Theme.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageLogInButtonText">
+            <summary>
+              Looks up a localized string similar to Log In.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageLogOutButtonText">
+            <summary>
+              Looks up a localized string similar to Log out.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageNoUserLoggedInText">
+            <summary>
+              Looks up a localized string similar to There is no user logged in, please click &quot;Log In&quot; to log in..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPagePersonalizationTitle">
+            <summary>
+              Looks up a localized string similar to Personalization.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPagePrivacyStatementText">
+            <summary>
+              Looks up a localized string similar to Privacy Statement.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageRadioButtonDarkTheme">
+            <summary>
+              Looks up a localized string similar to Dark.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageRadioButtonLightTheme">
+            <summary>
+              Looks up a localized string similar to Light.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageTitle">
+            <summary>
+              Looks up a localized string similar to Settings.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.SettingsPageUserTitle">
+            <summary>
+              Looks up a localized string similar to User.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.Shell_LogIn">
+            <summary>
+              Looks up a localized string similar to Log in.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ShellGoBackButton">
+            <summary>
+              Looks up a localized string similar to Go back.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ShellHamburgerButtonName">
+            <summary>
+              Looks up a localized string similar to Open or close navigation.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ShellMainPage">
+            <summary>
+              Looks up a localized string similar to Main.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ShellMasterDetailPage">
+            <summary>
+              Looks up a localized string similar to MasterDetail.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ShellSettingsPage">
+            <summary>
+              Looks up a localized string similar to Settings.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ShellStockOptionsPage">
+            <summary>
+              Looks up a localized string similar to StockOptions.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.ShellWebViewPage">
+            <summary>
+              Looks up a localized string similar to WebView.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.StockOptionsPageSubmitButtonText">
+            <summary>
+              Looks up a localized string similar to Go.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.WebViewPageBackButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Back (Alt + Left).
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.WebViewPageFaildedMessage">
+            <summary>
+              Looks up a localized string similar to Page failed to load. Check connection and retry..
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.WebViewPageForwardButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Forward (Alt + Right).
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.WebViewPageLoadingText">
+            <summary>
+              Looks up a localized string similar to Loading....
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.WebViewPageOpenInBrowserButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Open in browser (Ctrl + T).
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Properties.Resources.WebViewPageRefreshButtonTooltip">
+            <summary>
+              Looks up a localized string similar to Refresh (F5).
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.RegionNames.ContentRegion">
+            <summary>
+            Region 'ContentRegion'
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.RegionNames.ContentRegion_Stocks">
+            <summary>
+            Region 'ContentRegion_Stocks'
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.RegionNames.Footer_Region">
+            <summary>
+            Region 'Footer_Region'
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.RegionNames.RightContentRegion">
+            <summary>
+            Region 'RightContentRegion'
+            </summary>
+        </member>
+        <member name="T:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1">
+            <summary>
+            Class ChangeTrackingCollection.
+            Implements the <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" />
+            Implements the <see cref="T:LewisFam.Desktop.Core.Wrapper.IValidatableTrackingObject" />
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:System.Collections.ObjectModel.ObservableCollection`1" />
+            <seealso cref="T:LewisFam.Desktop.Core.Wrapper.IValidatableTrackingObject" />
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1._originalCollection">
+            <summary>
+            The original collection
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1._addedItems">
+            <summary>
+            The added items
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1._removedItems">
+            <summary>
+            The removed items
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1._modifiedItems">
+            <summary>
+            The modified items
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1" /> class.
+            </summary>
+            <param name="items">The items.</param>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.AddedItems">
+            <summary>
+            Gets the added items.
+            </summary>
+            <value>The added items.</value>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.RemovedItems">
+            <summary>
+            Gets the removed items.
+            </summary>
+            <value>The removed items.</value>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.ModifiedItems">
+            <summary>
+            Gets the modified items.
+            </summary>
+            <value>The modified items.</value>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.IsChanged">
+            <summary>
+            Gets the object's changed status.
+            </summary>
+            <value><c>true</c> if this instance is changed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.IsValid">
+            <summary>
+            Returns true if ... is valid.
+            </summary>
+            <value><c>true</c> if this instance is valid; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.AcceptChanges">
+            <summary>
+            Resets the object’s state to unchanged by accepting the modifications.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.RejectChanges">
+            <summary>
+            Resets the object’s state to unchanged by rejecting the modifications.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Handles the <see cref="E:CollectionChanged" /> event.
+            </summary>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.ItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Items the property changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.AttachItemPropertyChangedHandler(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Attaches the item property changed handler.
+            </summary>
+            <param name="items">The items.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.DetachItemPropertyChangedHandler(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Detaches the item property changed handler.
+            </summary>
+            <param name="items">The items.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection`1.UpdateObservableCollection(System.Collections.Generic.ICollection{`0},System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Updates the observable collection.
+            </summary>
+            <param name="collection">The collection.</param>
+            <param name="items">The items.</param>
+        </member>
+        <member name="T:LewisFam.Desktop.Core.Wrapper.IValidatableTrackingObject">
+            <summary>
+            Interface IValidatableTrackingObject
+            Implements the <see cref="T:System.ComponentModel.IRevertibleChangeTracking" />
+            Implements the <see cref="T:System.ComponentModel.INotifyPropertyChanged" />
+            </summary>
+            <seealso cref="T:System.ComponentModel.IRevertibleChangeTracking" />
+            <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.IValidatableTrackingObject.IsValid">
+            <summary>
+            Returns true if ... is valid.
+            </summary>
+            <value><c>true</c> if this instance is valid; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1">
+            <summary>
+            Class ModelWrapper.
+            Implements the <see cref="T:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase" />
+            Implements the <see cref="T:LewisFam.Desktop.Core.Wrapper.IValidatableTrackingObject" />
+            Implements the <see cref="T:System.ComponentModel.DataAnnotations.IValidatableObject" />
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase" />
+            <seealso cref="T:LewisFam.Desktop.Core.Wrapper.IValidatableTrackingObject" />
+            <seealso cref="T:System.ComponentModel.DataAnnotations.IValidatableObject" />
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1._originalValues">
+            <summary>
+            The original values
+            </summary>
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1._trackingObjects">
+            <summary>
+            The tracking objects
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1" /> class.
+            </summary>
+            <param name="model">The model.</param>
+            <exception cref="T:System.ArgumentNullException">model</exception>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.InitializeComplexProperties(`0)">
+            <summary>
+            Initializes the complex properties.
+            </summary>
+            <param name="model">The model.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.InitializeCollectionProperties(`0)">
+            <summary>
+            Initializes the collection properties.
+            </summary>
+            <param name="model">The model.</param>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.Model">
+            <summary>
+            Gets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.IsChanged">
+            <summary>
+            Gets the object's changed status.
+            </summary>
+            <value><c>true</c> if this instance is changed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.IsValid">
+            <summary>
+            Returns true if ... is valid.
+            </summary>
+            <value><c>true</c> if this instance is valid; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.AcceptChanges">
+            <summary>
+            Resets the object’s state to unchanged by accepting the modifications.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.RejectChanges">
+            <summary>
+            Resets the object’s state to unchanged by rejecting the modifications.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.GetValue``1(System.String)">
+            <summary>
+            Gets the value.
+            </summary>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="propertyName">Name of the property.</param>
+            <returns>TValue.</returns>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.GetOriginalValue``1(System.String)">
+            <summary>
+            Gets the original value.
+            </summary>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="propertyName">Name of the property.</param>
+            <returns>TValue.</returns>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.GetIsChanged(System.String)">
+            <summary>
+            Gets the is changed.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.SetValue``1(``0,System.String)">
+            <summary>
+            Sets the value.
+            </summary>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="newValue">The new value.</param>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.Validate">
+            <summary>
+            Validates this instance.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.UpdateOriginalValue(System.Object,System.Object,System.String)">
+            <summary>
+            Updates the original value.
+            </summary>
+            <param name="currentValue">The current value.</param>
+            <param name="newValue">The new value.</param>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.RegisterCollection``2(LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection{``0},System.Collections.Generic.List{``1})">
+            <summary>
+            Registers the collection.
+            </summary>
+            <typeparam name="TWrapper">The type of the t wrapper.</typeparam>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <param name="wrapperCollection">The wrapper collection.</param>
+            <param name="modelCollection">The model collection.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.RegisterCollection``2(LewisFam.Desktop.Core.Wrapper.ChangeTrackingCollection{``0},System.Collections.ObjectModel.ObservableCollection{``1})">
+            <summary>
+            Registers the collection.
+            </summary>
+            <typeparam name="TWrapper">The type of the t wrapper.</typeparam>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <param name="wrapperCollection">The wrapper collection.</param>
+            <param name="modelCollection">The model collection.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.RegisterComplex``1(LewisFam.Desktop.Core.Wrapper.ModelWrapper{``0})">
+            <summary>
+            Registers the complex.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <param name="wrapper">The wrapper.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.RegisterTrackingObject(LewisFam.Desktop.Core.Wrapper.IValidatableTrackingObject)">
+            <summary>
+            Registers the tracking object.
+            </summary>
+            <param name="trackingObject">The tracking object.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.TrackingObjectPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Trackings the object property changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.ModelWrapper`1.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Validates the specified validation context.
+            </summary>
+            <param name="validationContext">The validation context.</param>
+            <returns>IEnumerable&lt;ValidationResult&gt;.</returns>
+        </member>
+        <member name="T:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase">
+            <summary>
+            Class NotifyDataErrorInfoBase.
+            Implements the <see cref="!:ExportViewModelBase" />
+            Implements the <see cref="T:System.ComponentModel.INotifyDataErrorInfo" />
+            </summary>
+            <seealso cref="!:ExportViewModelBase" />
+            <seealso cref="T:System.ComponentModel.INotifyDataErrorInfo" />
+        </member>
+        <member name="F:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase.Errors">
+            <summary>
+            The errors
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase" /> class.
+            </summary>
+        </member>
+        <member name="P:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase.HasErrors">
+            <summary>
+            Gets a value that indicates whether the entity has validation errors.
+            </summary>
+            <value><c>true</c> if this instance has errors; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase.ErrorsChanged">
+            <summary>
+            Occurs when the validation errors have changed for a property or for the entire entity.
+            </summary>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase.GetErrors(System.String)">
+            <summary>
+            Gets the validation errors for a specified property or for the entire entity.
+            </summary>
+            <param name="propertyName">The name of the property to retrieve validation errors for; or null or <see cref="F:System.String.Empty" />, to retrieve entity-level errors.</param>
+            <returns>The validation errors for the property or entity.</returns>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase.OnErrorsChanged(System.String)">
+            <summary>
+            Called when [errors changed].
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:LewisFam.Desktop.Core.Wrapper.NotifyDataErrorInfoBase.ClearErrors">
+            <summary>
+            Clears the errors.
+            </summary>
+        </member>
+    </members>
+</doc>

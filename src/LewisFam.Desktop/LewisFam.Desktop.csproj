@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>LewisFam.Desktop</AssemblyName>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <AssemblyVersion>1.1.1.1</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageIcon>Large-Monogram-Letter-L-1-PNG.png</PackageIcon>
+    <Authors>Terrell Lewis</Authors>
+    <Company>LewisFam.Network</Company>
+    <PackageReleaseNotes>Notes</PackageReleaseNotes>
+    <PackageTags>Stocks, Options, "Stock Options"</PackageTags>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>true</Optimize>
+    <DocumentationFile>E:\Dev\zMe\git\src\LewisFam.Desktop\LewisFam.Desktop.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ViewModels\ChromelessShellWindowViewModel.cs" />
+    <Compile Remove="ViewModels\MainWindowViewModel.cs" />
+    <Compile Remove="ViewModels\SettingsViewModel.cs" />
+    <Compile Remove="Views\ChromelessShellWindow.xaml.cs" />
+    <Compile Remove="Views\MainWindow.xaml.cs" />
+    <Compile Remove="Views\SettingsPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Views\ChromelessShellWindow.xaml" />
+    <Page Remove="Views\MainWindow.xaml" />
+    <Page Remove="Views\SettingsPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+      <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />     
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Large-Monogram-Letter-L-1-PNG.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LewisFam.Desktop.Core\LewisFam.Desktop.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MyResources.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
